@@ -1,0 +1,38 @@
+html {
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centering y-axis */
+    align-items: center; /* Centering x-axis */
+}
+
+.container {
+    width: 400px;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-link img {
+    height: 30px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 75%;
+    }
+
+    .social-link img {
+        height: 25px;
+    }
+}

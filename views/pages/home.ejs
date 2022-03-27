@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head'); -%>
+<body>
+<main>
+    <div class="container">
+        <img src="<%= img_path %>kobbok-logo.svg">
+        <ul class="social-links">
+            <% socialLinks.forEach(function(link){ %>
+                <li class="social-link">
+                    <a href="<%= link.link %>" alt="<%= link.title%>" target="_blank">
+                        <img src="<%= img_path %>logos/<%= link.platform %>-logo.svg" alt=""/>
+                      </a>
+                </li>
+            <% }); %>
+        </ul>
+    </div>  
+</main>
+<%- include('../partials/scripts'); -%>
+</body>
+</html>
