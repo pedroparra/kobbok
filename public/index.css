@@ -27,6 +27,11 @@ main {
     height: 30px;
 }
 
+.social-link svg {
+    height: 34px;
+    fill: #fff;
+}
+
 @media (max-width: 600px) {
     .container {
         width: 75%;
@@ -35,4 +40,9 @@ main {
     .social-link img {
         height: 25px;
     }
+
+    .social-link svg {
+        height: 28px;
+    }
+
 }
